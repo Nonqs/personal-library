@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lybrary</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="index.js" defer></script>
+
+</head>
+<body>
+    <header class="header">
+        <h1>Personal library</h1>
+        <button id="button">Login</button>
+    </header>
+    <br>
+    <section class="container" >
+        <button id="add-button" onclick="showDialog()">
+            <img src="IMG/plus.svg" alt="plus">
+            <p>New book</p>
+        </button>
+
+        <form onsubmit="saveDialog(event)">
+            <dialog id="dialog">
+                <input class="input" id="book-name" type="text" placeholder="Book name" required>
+                <br>
+                <input class="input" id="author" type="text" placeholder="Author">
+                <br>
+                <input oninput="validatePages()" class="input" id="total-pages" type="number" placeholder="Total pages" required>
+                <br>
+                <input oninput="validatePages()" class="input" id="completed-pages" type="number" placeholder="Complated pages">
+                <br>
+                
+                <button id="save" class="end-dialog" type="submit">Save</button>
+                <br>
+                <button id="close" class="end-dialog" type="button" onclick="hideDialog()">Close </button>
+                <p id="error"></p>
+                
+            </dialog>
+        </form>
+        
+    
+    </section>
+
+
+
+    
+    
+    <section id="book-list">
+        <button onclick="divShow()" class="information-index" id="show">
+             
+        </button>
+    
+        <div class="none information-index" id="info">
+            <h2>Information</h2>
+            <p>Books read: </p>
+            <p>Total pages completed: </p>
+            <p>Time reading: </p>
+        </div>
+
+        
+    </section>
+ 
+</body>
+</html>

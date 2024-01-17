@@ -1,0 +1,191 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: #f0eef1;
+}
+
+h1{
+    margin-left: 20px;
+}
+
+.header{
+    background-color:white; 
+ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+
+    
+}
+
+#button{
+    background-color: #f0eef1;
+    height: 30px;
+    width: 100px;
+    margin-right:40px ;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: background-color 0.3s;
+    
+}
+
+#button:hover, #add-button:hover, .delete-button:hover, #show:hover {
+    background-color: gray; 
+}
+
+.container{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 60px;
+    
+}
+
+#add-button{
+    border-radius: 10px;
+    background-color: white;
+    border: 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; 
+    grid-area: 1 / 1 / 2 / 3;
+   
+   
+
+}
+
+
+dialog{
+    border-radius: 10px;
+    border: 0;
+    
+}
+
+dialog::backdrop{
+    filter: brightness(60%); 
+
+}
+
+.input{
+    margin-bottom: 5px;
+    border: none;
+    border-bottom: 1px solid black;
+    width: auto;
+    height: 25px;
+    
+}
+
+label{
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+#book-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:40px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 40px;
+   
+}
+
+
+.card {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+}
+
+
+.end-dialog{
+    font-size: 13px;
+    height: 25px;
+    margin: 5px;
+    width: 80%;
+    color: white;
+    font-weight: bold;
+    border: 0;
+    border-radius: 20px;
+    
+}
+
+#save{
+    background-color: #C4DF9B;
+}
+
+#close{
+    background-color: #FA8072;
+}
+
+#error{
+    font-size: 10px;
+}
+
+.delete-button{
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #FA8072;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; 
+}
+
+.read-button{
+    width: 70%;
+    height: 40px;
+    margin: 10px;
+    border: 0;
+    border-radius: 10px;
+    background-color:  rgb(255, 255, 153);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; 
+}
+
+.information-index{
+    
+    height: 250px;
+    width: 150px;
+    position: fixed;
+    margin-left: 82%;
+    border-radius: 10px;
+    background-color: white;
+    border: 0;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s; 
+    border: black 1px solid;
+   
+    
+    
+}
+
+.none{
+    
+    display: none!important;
+    
+    
+}
+
+#show{
+   
+    width: 40px;
+    height: 60px;
+    margin-left: 94%;
+    border: none;
+    
+
+}
+
+.img{
+    width: 80%;
+}
